@@ -1,0 +1,4 @@
+import pandas as pd
+df_xss = pd.read_csv("~/Downloads/xss_dataset.csv")
+df_xss.to_pickle("xss_memory.pkl")
+df_xss = pd.read_pickle("xss_memory.pkl")
